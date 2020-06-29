@@ -22,6 +22,11 @@ service:
 route:
   enabled: false
 
+metadata: 
+ annotations:
+   ingress.bluemix.net/appid-auth: "bindSecret=binding-sandbox-ocp431-one-appid namespace=dev5-yks requestType=web serviceName=inv-ui-appid-yks idToken=true"
+
+
 ingress:
   enabled: true
   appid:
